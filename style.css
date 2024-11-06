@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.book-form {
+  display: grid;
+  gap: 1rem;
+}
+
+dialog {
+  border: none;
+  box-shadow: 0 0 5px #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.open-diag {
+  display: block;
+}
+
+.close-diag {
+  display: none;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+input,
+button {
+  padding: 0.5em 1em;
+}
+
+button {
+  cursor: pointer;
+}
+
+header,
+main > * {
+  padding: 1rem;
+}
+
+header {
+  background-color: #222f43;
+  color: #fff;
+  height: 10%;
+}
+
+main {
+  background-color: #bcc1c9;
+  height: 90%;
+}
+
+nav {
+  margin-bottom: 3rem;
+  background-color: #364253;
+}
+
+nav button {
+  background-color: #86f3f7;
+  border: none;
+}
+
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  place-content: center;
+}
+
+.book {
+  height: 10rem;
+  background-color: #fff;
+  box-shadow: 0 0 5px #333;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.book > * {
+  padding: 0.5rem;
+}
+
+.book .title {
+  background-color: #c49191;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.book .author {
+  background-color: #f0e6e0;
+}
+
+.book .pages-div {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.book .buttons-div {
+  display: flex;
+  gap: 1rem;
+}
+
+.book .buttons-div button {
+  border: none;
+}
+
+.book .buttons-div .read-button {
+  background-color: rgb(189, 241, 245);
+}
+
+.book .buttons-div .delete-button {
+  background-color: rgb(245, 189, 189);
+}
